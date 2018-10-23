@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 
 public partial class navbar_heredada : System.Web.UI.MasterPage
 {
+
+    protected GridView gridCanciones { get { return this.gridCancionesMaster; } }
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -15,7 +17,7 @@ public partial class navbar_heredada : System.Web.UI.MasterPage
     protected void btnAddToCart_Click(object sender, EventArgs e)
     {
         Carrito car = (Carrito)Session["carrito"];
-        foreach (GridViewRow row in this.gridCanciones.Rows)
+        foreach (GridViewRow row in this.gridCancionesMaster.Rows)
         {
             if (((CheckBox)row.FindControl("chkComprar")).Checked)
             {

@@ -14,7 +14,7 @@
 
 
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-        <asp:GridView ID="gridCanciones" runat="server" HorizontalAlign="Center" Width="80%">
+        <asp:GridView ID="gridCancionesMaster" runat="server" HorizontalAlign="Center" Width="80%">
             <Columns>
                 <asp:TemplateField HeaderText="Comprar">
                     <EditItemTemplate>
