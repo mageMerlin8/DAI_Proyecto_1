@@ -28,6 +28,7 @@ CREATE TABLE albums
 CREATE TABLE canciones
 ( id_cancion     INT NOT NULL PRIMARY KEY,
   nombre         char(30) NOT NULL,
+  precio		 money,
   id_album       INT NOT NULL REFERENCES albums);
 
   
