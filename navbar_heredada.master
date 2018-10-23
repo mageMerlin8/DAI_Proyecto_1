@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/navbar.master" AutoEventWireup="true" CodeFile="navbar_heredada.master.cs" Inherits="navbar_heredada" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
+</asp:Content>
+
+
+<asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+        <asp:GridView ID="gridCanciones" runat="server" HorizontalAlign="Center" Width="80%">
+            <Columns>
+                <asp:TemplateField HeaderText="Comprar">
+                    <EditItemTemplate>
+                        <asp:CheckBox ID="chkComprar" runat="server" />
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:CheckBox ID="chkComprar" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+        </asp:GridView>
+        <br />
+        <asp:Button ID="btnAddToCart" runat="server" Text="Agregar al carrito" OnClick="btnAddToCart_Click" />
+        <asp:Button ID="btnPagar" runat="server" Text="Pagar" OnClick="btnPagar_Click" />
+</asp:Content>
