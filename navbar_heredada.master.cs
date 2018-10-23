@@ -7,8 +7,8 @@ using System.Web.UI.WebControls;
 
 public partial class navbar_heredada : System.Web.UI.MasterPage
 {
-
-    protected GridView gridCanciones { get { return this.gridCancionesMaster; } }
+    public GridView gridCanciones { get { return this.gridCancionesMaster; }
+                                    set { this.gridCancionesMaster = value; } }
     protected void Page_Load(object sender, EventArgs e)
     {
 

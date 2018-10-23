@@ -22,6 +22,22 @@ public partial class pagInicio : System.Web.UI.Page
 
     protected void btnBuscar_Click(object sender, EventArgs e)
     {
+        //Recupero los datos de la sesión
+        gestor = (GestorBD.GestorBD)Session["GestorBD"];
 
+        //Buscamos la canción por nombre de la canción 
+        if (rbCancion.Checked)
+        {
+            cadsql = "Select * from canciones where nombre = " + txtNombre.Text;
+            gestor.consBD(cadsql, dsGeneral, "Canciones");
+            
+            
+        }
+        else
+        {
+            cadsql = "Select * from Canciones ca, artistas a, albums al where a.nombre = " + txtNombre.Text + " and a.id_artista = al.id_artista and al.id_album = ca.id_album";
+            gestor.consBD(cadsql, dsGeneral, "Canciones");
+        }
     }
+    
 }

@@ -14,7 +14,7 @@ public partial class _Default : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            gestor = new GestorBD.GestorBD("SQLOLEDB", "CC101-30",
+            gestor = new GestorBD.GestorBD("SQLOLEDB", "112SALAS27",
               "sa", "sqladmin", "em_proyecto_1");
             Session["GestorBD"] = gestor;
         }

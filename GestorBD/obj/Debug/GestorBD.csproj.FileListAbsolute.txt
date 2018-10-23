@@ -1,0 +1,15 @@
+C:\DAI\Programas\GestorBD\bin\Debug\GestorBD.dll
+C:\DAI\Programas\GestorBD\bin\Debug\GestorBD.pdb
+C:\DAI\Programas\GestorBD\obj\Debug\GestorBD.csprojResolveAssemblyReference.cache
+C:\DAI\Programas\GestorBD\obj\Debug\GestorBD.dll
+C:\DAI\Programas\GestorBD\obj\Debug\GestorBD.pdb
+C:\Users\dai\Desktop\em temp\Programasde la base de datos\GestorBD\bin\Debug\GestorBD.dll
+C:\Users\dai\Desktop\em temp\Programasde la base de datos\GestorBD\bin\Debug\GestorBD.pdb
+C:\Users\dai\Desktop\em temp\Programasde la base de datos\GestorBD\obj\Debug\GestorBD.csprojResolveAssemblyReference.cache
+C:\Users\dai\Desktop\em temp\Programasde la base de datos\GestorBD\obj\Debug\GestorBD.dll
+C:\Users\dai\Desktop\em temp\Programasde la base de datos\GestorBD\obj\Debug\GestorBD.pdb
+C:\Users\EMENAG\Desktop\Programasde la base de datos\GestorBD\bin\Debug\GestorBD.dll
+C:\Users\EMENAG\Desktop\Programasde la base de datos\GestorBD\bin\Debug\GestorBD.pdb
+C:\Users\EMENAG\Desktop\Programasde la base de datos\GestorBD\obj\Debug\GestorBD.csprojResolveAssemblyReference.cache
+C:\Users\EMENAG\Desktop\Programasde la base de datos\GestorBD\obj\Debug\GestorBD.dll
+C:\Users\EMENAG\Desktop\Programasde la base de datos\GestorBD\obj\Debug\GestorBD.pdb

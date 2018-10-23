@@ -32,4 +32,14 @@ public class Carrito
     {
         return this.clavesCanciones.Remove(clave);
     }
+
+    public int getNum()
+    {
+        return clavesCanciones.Count;
+    }
+
+    public int getID(int i)
+    {
+        return clavesCanciones[i];
+    }
 }
