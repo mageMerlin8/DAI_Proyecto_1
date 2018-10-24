@@ -33,6 +33,7 @@ public partial class _Default : System.Web.UI.Page
         {
             //guarda al usuario en la sesion
             Session["nombre_usuario"] = Login1.UserName;
+            Session["num_usuario"] = dsGeneral.Tables["usuario"].Rows[0]["id_usuario"];
             //crea un carrito para el usuario
             Carrito carro = new Carrito();
             Session["carrito"] = carro;
