@@ -18,13 +18,19 @@ public partial class pagInicio : System.Web.UI.Page
         calFin.SelectedDate = DateTime.Today;
         llenaGridCompras();
     }
-    protected void compraSeleccionada(object sender, EventArgs e)
-    {
-        Button btn = (Button)sender;
-        GridViewRow row = (GridViewRow)btn.NamingContainer;
-        int idCompra = Convert.ToInt32(row.Cells[1]);
-        this.llenaGridCanciones(idCompra);
 
+    public void gridCompras_rowCommand(Object sender, GridViewCommandEventArgs e)
+    {
+        if(e.CommandName == "Select")
+        {
+            int rowIndex = Convert.ToInt32(e.CommandArgument);
+
+            GridViewRow seleccion = gridCompras.Rows[rowIndex];
+
+            int idCompra = Convert.ToInt16(seleccion.Cells[2].Text);
+
+            this.llenaGridCanciones(idCompra);
+        }
     }
     protected void llenaGridCanciones(int compra)
     {

@@ -13,17 +13,13 @@
     <br />
     <asp:Label ID="Label5" runat="server" Text="Compras:"></asp:Label>
     <br />
-    <asp:GridView ID="gridCompras" runat="server">
-        <Columns>
-
-            <asp:TemplateField HeaderText="Seleccione una compra">
-            <ItemTemplate>
-            <asp:Button ID="Button1" runat="server" Text="Seleccionar" 
-            OnClick="compraSeleccionada" />
-            </ItemTemplate>
-            </asp:TemplateField>
-            
-        </Columns>
+    <asp:GridView ID="gridCompras" runat="server" OnRowCommand="gridCompras_rowCommand">
+        <columns>
+          <asp:buttonfield buttontype="Button" 
+            commandname="Select"
+            headertext="Seleccionar una compra:" 
+            text="Seleccionar"/>
+        </columns>
     </asp:GridView>
     <br />
     <br />
