@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/navbar_heredada.master" AutoEventWireup="true" CodeFile="pagInicio.aspx.cs" Inherits="pagInicio" %>
-
+<%@ MasterType VirtualPath="~/navbar_heredada.master" %>
 
 
 <asp:Content ID="Content1" runat="server" contentplaceholderid="ContentPlaceHolder1">

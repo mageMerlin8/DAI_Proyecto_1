@@ -8,10 +8,10 @@ using System.Web.UI.WebControls;
 public partial class navbar_heredada : System.Web.UI.MasterPage
 {
     public GridView gridCanciones { get { return this.gridCancionesMaster; }
-                                    set { this.gridCancionesMaster = value; } }
+                                       set { this.gridCancionesMaster = value; } }
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        this.gridCancionesMaster.Enabled = true;
     }
 
     protected void btnAddToCart_Click(object sender, EventArgs e)
@@ -21,7 +21,7 @@ public partial class navbar_heredada : System.Web.UI.MasterPage
         {
             if (((CheckBox)row.FindControl("chkComprar")).Checked)
             {
-                car.alta(Convert.ToInt32(row.Cells[0].Text));
+                car.alta(Convert.ToInt32(row.Cells[1].Text));
             }
         }
         Session["carrito"] = car;
@@ -29,7 +29,6 @@ public partial class navbar_heredada : System.Web.UI.MasterPage
 
     protected void btnPagar_Click(object sender, EventArgs e)
     {
-        this.btnAddToCart_Click(null, null);
         Server.Transfer("pagConfirmacion.aspx");
     }
 }

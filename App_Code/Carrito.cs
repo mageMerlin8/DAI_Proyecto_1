@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
+using System.Text;
 
 /// <summary>
 /// Descripción breve de Comunes
@@ -33,13 +34,19 @@ public class Carrito
         return this.clavesCanciones.Remove(clave);
     }
 
-    public int getNum()
+    public string listaCompras()
     {
-        return clavesCanciones.Count;
-    }
+        StringBuilder resp;
+        int size = 2 + 2 * clavesCanciones.Count + 1;
+        resp = new StringBuilder(size);
+        resp.Append("(");
+        foreach (int i in clavesCanciones)
+            resp.Append(i.ToString() + ",");
+        resp.Insert(size - 2, "0");
+        resp.Append(")");
 
-    public int getID(int i)
-    {
-        return clavesCanciones[i];
+
+        return resp.ToString();
     }
+    
 }
