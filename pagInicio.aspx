@@ -4,5 +4,8 @@
 
 <asp:Content ID="Content1" runat="server" contentplaceholderid="ContentPlaceHolder1">
     <asp:Label ID="lblBienvenida" runat="server" Text="lbl mensaje bienvenida"></asp:Label>
+    <br />
+    <br />
+    <asp:Label ID="Label1" runat="server" Text="Top 5"></asp:Label>
 </asp:Content>
 

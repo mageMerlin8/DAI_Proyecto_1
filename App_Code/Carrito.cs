@@ -18,7 +18,10 @@ public class Carrito
     {
         this.clavesCanciones = new List<int>();
     }
-
+    public bool isEmpty()
+    {
+        return clavesCanciones.Count == 0;
+    }
     public bool alta(int clave)
     {
         if (!this.clavesCanciones.Contains(clave))
@@ -47,6 +50,14 @@ public class Carrito
 
 
         return resp.ToString();
+    }
+    public string insertaCancionesStr(int idCompra)
+    {
+        string ini = "insert into compras_cancion values ( ";
+        string resp = "";
+        foreach(int i in clavesCanciones)
+            resp = resp + ini + i + ", " + idCompra + ")";
+        return resp;
     }
     
 }
